@@ -232,7 +232,11 @@ footer {
 #nearby {
     border: 0;
 }
- 
-textarea{
-    background:rgb(236, 236, 236);
+
+textarea {
+    background: rgb(236, 236, 236);
+}
+
+.checked {
+    color: orange;
 }
