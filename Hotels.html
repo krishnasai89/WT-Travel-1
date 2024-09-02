@@ -29,16 +29,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav justify-content-end nav-pills" style="text-align: center;">
-                <li class="nav-item active">
-                    <a class="nav-link active" href="./index.html"><i class="fa fa-home"></i> Home<span
+            <ul class="navbar-nav nav justify-content-end nav-pills" style="text-align: center;">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./Packages.html"><i class="fa fa-group"></i> Packages</a>
                 </li>
-                <li class="nav-item">
-                    <a href="./Hotels.html" class="nav-link"> <i class="fa fa-bed"></i> Hotels</a>
+                <li class="nav-item active">
+                    <a href="./Hotels.html" class="nav-link active"> <i class="fa fa-bed"></i> Hotels</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -56,29 +56,145 @@
     </nav>
     <button onclick="topFunction()" id="myButton" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="container">
-        <h3>Best Places To Stay in India</h3>
-        <div class="row">
-            <div class="col">
-                <img src="./img/Private Pool.png" alt="" id="hotels">
-                <a href="" class="nav-link text-dark">Private Pool</a>
-            </div>
-            <div class="col">
-                <img src="./img/Luxury Hotels.png" alt="" id="hotels">
-                <a href="" class="nav-link text-dark">Luxury hotels</a>
-            </div>
-            <div class="col">
-                <img src="./img/5-Star Hotels.png" alt="" id="hotels">
-                <a href="" class="nav-link text-dark">5-Star Hotels</a>
-            </div>
-            <div class="col">
-                <img src="./img/Hotels.png" alt="" id="hotels">
-                <a href="" class="nav-link text-dark">Hotels</a>
-            </div>
-            <div class="col">
-                <img src="./img/Luxury Hotels.png" alt="" id="hotels">
-                <a href="" class="nav-link text-dark">Luxury Hotels</a>
+        <h2>Hotels in India</h2>
+        <p>Top stay options curated by Holidify for your travel needs</p>
+        <div style="box-sizing: content-box; box-shadow: 5px 4px 6px 7px rgb(160, 158, 158);">
+            <div class="md-3 ml-2" style="margin: 5px;"></div>
+            <div class="container">
+                <div class="md-3 ml-2" style="margin: 5px;"></div>
+                <form action="">
+                    <div class="md-3 ml-2" style="margin: 10px;"></div>
+                    <div class="input-group md-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter City Name">
+                    </div>
+                    <div class="md-3 ml-2" style="margin: 10px;"></div>
+                    <div class="row md-3">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 md-3">
+                            <label for="checkInDate">Check-In Date</label>
+                            <input type="date" class="form-control" id="checkInDate">
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 md-3">
+                            <label for="checkInDate">Check-out Date</label>
+                            <input type="date" class="form-control" id="checkInDate">
+                        </div>
+                        <div class="md-3" style="margin: 10px;"></div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text fa fa-user" for="inputGroupSelect01"></label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">1Adults</option>
+                                    <option value="2">2Adults</option>
+                                    <option value="3">3Adults</option>
+                                    <option value="4">4Adults</option>
+                                    <option value="5">5Adults</option>
+                                    <option value="6">6Adults</option>
+                                    <option value="7">7Adults</option>
+                                    <option value="8">8Adults</option>
+                                    <option value="9">9Adults</option>
+                                    <option value="10">10Adults</option>
+                                    <option value="11">11Adults</option>
+                                    <option value="12">12Adults</option>
+                                    <option value="13">13Adults</option>
+                                    <option value="14">14Adults</option>
+                                    <option value="15">15Adults</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-3 ml-2" style="margin: 5px;"></div>
+                </form>
             </div>
         </div>
+    </div>
+    <!-- Best Places To Stay in India -->
+    <h3>Best Places To Stay in India</h3>
+    <div class="row">
+        <div class="col">
+            <img src="./img/Private Pool.png" alt="" id="hotels">
+            <a href="" class="nav-link text-dark">Private Pool</a>
+        </div>
+        <div class="col">
+            <img src="./img/Luxury Hotels.png" alt="" id="hotels">
+            <a href="" class="nav-link text-dark">Luxury hotels</a>
+        </div>
+        <div class="col">
+            <img src="./img/5-Star Hotels.png" alt="" id="hotels">
+            <a href="" class="nav-link text-dark">5-Star Hotels</a>
+        </div>
+        <div class="col">
+            <img src="./img/Hotels.png" alt="" id="hotels">
+            <a href="" class="nav-link text-dark">Hotels</a>
+        </div>
+        <div class="col">
+            <img src="./img/Luxury Hotels.png" alt="" id="hotels">
+            <a href="" class="nav-link text-dark">Luxury Hotels</a>
+        </div>
+    </div>
+    <h3>Featured Destinations in India</h3>
+    <div class="scroll-container">
+        <img src="./img/Hotels.png" alt="Cinque Terre">
+        <img src="./img/5-Star Hotels.png" alt="Forest">
+        <img src="./img/Luxury Hotels.png" alt="Northern Lights">
+        <img src="./img/Private Pool.png" alt="Mountains">
+    </div>
+    <h3>Top Resorts in India</h3>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card" style="box-shadow: 5px 5px 4px 7px rgb(191, 190, 190); width: 300px;">
+                <div class="card-header">
+                    <img src="./img/Resorts in Lonavala.png" alt="" width="220px">
+                </div>
+                <div class="card-body">
+                    <a href="" class="nav-link">Resorts in Lonavala</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card" style="box-shadow: 5px 5px 4px 7px rgb(191, 190, 190); width: 300px;">
+                <div class="card-header">
+                    <img src="./img/Resorts in jaipur for an Unforgettable Stay.png" alt="" width="250px">
+                </div>
+                <div class="card-body">
+                    <a href="" class="nav-link">Resorts in jaipur for an Unforgettable Stay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card" style="box-shadow: 5px 5px 4px 7px rgb(191, 190, 190); width: 300px;">
+                <div class="card-header">
+                    <img src="./img/Resorts in Udaipur For a Royal Treat.png" alt="" width="220px">
+                </div>
+                <div class="card-body">
+                    <a href="" class="nav-link">Resorts in Udaipur For a Royal Treat</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card" style="box-shadow: 5px 5px 4px 7px rgb(191, 190, 190); width: 300px;">
+                <div class="card-header">
+                    <img src="./img/Resorts in Goa.png" alt="" width="220px">
+                </div>
+                <div class="card-body">
+                    <a href="" class="nav-link">Resorts in Goa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: 19px;"></div>
+    <!-- Top Villas in India -->
+    <h4>Top Villas in India</h4>
+    <!-- Best Hotels in India -->
+    <h4>Best Hotels in India</h4>
+    <!-- Stays Collections in nearby country -->
+    <h4>Stays Collections in nearby country</h4>
+    <!-- Other stay collections -->
+    <h4>Other stay collections</h4>
     </div>
     <!-- footer bar -->
     <div style="margin-bottom: 50px;"></div>
