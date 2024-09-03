@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav justify-content-end nav-pills" style="text-align: center;">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="./index.html"><i class="fa fa-home"></i> Home<span
+                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -39,34 +39,30 @@
                 <li class="nav-item">
                     <a href="./Hotels.html" class="nav-link"> <i class="fa fa-bed"></i> Hotels</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown"
                         aria-expanded="false">
                         Login/Sign up <i class="fa" style="size: 48px;">&#xf090;</i>
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./login.html"> <i class="fa fa-id-badge"></i> Login</a>
-                        <a class="dropdown-item" href="./signup.html">Sign up</a>
+                        <a class="dropdown-item active" href="./login.html"> <i class="fa fa-id-badge"></i> Login</a>
+                        <a class="dropdown-item" href="./signup.html"><i class="fa fa-user-plus"></i>Sign up</a>
                     </div>
                 </li>
 
             </ul>
         </div>
     </nav>
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="contianer">
+        <h2>Log In</h2>
+        <form>
+           <label for="" class="form-group"></label>
+           <input type="email" class="form-control">
+           <label for=""></label>
+           <input type="password" class="form-control">
+        </form>
+    </div>
     <!-- footer bar -->
-    <div style="margin-bottom: 50px;"></div>
     <footer>
         <div class="container">
             <div class="row">
@@ -84,12 +80,12 @@
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                     <hr>
                     <div class="dropup dropdown" style="margin: 50%;">
-                        <label for="currency"><strong>Currency:</strong></label>
+                        <label><b>Currency:</b></label>
                         <select id="currency" class="custom-select">
-                            <option value="">Currency</option>
-                            <option value="inr"><i class="fa fa-rupee"></i>INR</option>
-                            <option value="usd"><i class="fa fa-dollar"></i>USD</option>
-                            <option value="eur"><i class="fa fa-eur"></i>EUR</option>
+                            <option selected>Currency</option>
+                            <option value="inr"><i class="fa fa-rupee">INR</i></option>
+                            <option value="usd"><i class="fa fa-dollar">USD</i></option>
+                            <option value="eur"><i class="fa fa-eur">EUR</i></option>
                             <option value="gbp"><i class="fa fa-gbp"></i>GBP</option>
                             <option value="ade"><i class="fa fa-ade"></i>ADE</option>
                             <option value="aud"><i class="fa fa-aud"></i>AUD</option>

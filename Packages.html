@@ -10,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/Packages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./img/logo.jpg">
-    <link rel="stylesheet" href="./css/Packages.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav justify-content-end nav-pills" style="text-align: center;">
+            <ul class="navbar-nav nav justify-content-end nav-pills" style="text-align: center;">
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home<span
                             class="sr-only">(current)</span></a>
@@ -47,7 +47,7 @@
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="./login.html"> <i class="fa fa-id-badge"></i> Login</a>
-                        <a class="dropdown-item" href="./signup.html">Sign up</a>
+                        <a class="dropdown-item" href="./signup.html"><i class="fa fa-user-plus"></i>Sign up</a>
                     </div>
                 </li>
 
@@ -277,7 +277,6 @@
     <!--  -->
     <h4>Latest Reviews for India</h4>
     <!-- footer bar -->
-    <div style="margin-bottom: 50px;"></div>
     <footer>
         <div class="container">
             <div class="row">
@@ -295,12 +294,12 @@
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                     <hr>
                     <div class="dropup dropdown" style="margin: 50%;">
-                        <label for="currency"><strong>Currency:</strong></label>
+                        <label><b>Currency:</b></label>
                         <select id="currency" class="custom-select">
-                            <option value="">Currency</option>
-                            <option value="inr"><i class="fa fa-rupee"></i>INR</option>
-                            <option value="usd"><i class="fa fa-dollar"></i>USD</option>
-                            <option value="eur"><i class="fa fa-eur"></i>EUR</option>
+                            <option selected>Currency</option>
+                            <option value="inr"><i class="fa fa-rupee">INR</i></option>
+                            <option value="usd"><i class="fa fa-dollar">USD</i></option>
+                            <option value="eur"><i class="fa fa-eur">EUR</i></option>
                             <option value="gbp"><i class="fa fa-gbp"></i>GBP</option>
                             <option value="ade"><i class="fa fa-ade"></i>ADE</option>
                             <option value="aud"><i class="fa fa-aud"></i>AUD</option>
