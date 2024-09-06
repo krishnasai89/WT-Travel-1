@@ -10,11 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./img/logo.jpg">
 </head>
 
 <body>
+    <header>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt="" width="30px"></a>
@@ -28,10 +30,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav justify-content-end nav-pills" style="text-align: center;">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home<span
-                            class="sr-only">(current)</span></a>
+            <ul class="navbar-nav nav justify-content-end nav-pills" style="text-align: center;">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./Packages.html"><i class="fa fa-group"></i> Packages</a>
@@ -42,31 +43,50 @@
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown"
                         aria-expanded="false">
-                        Login/Sign up <i class="fa" style="size: 48px;">&#xf090;</i>
+                        Login/Sign up <i class="fa" style="size: 48px;">&#xf090;</i><span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item active" href="./login.html"> <i class="fa fa-id-badge"></i> Login</a>
+                        <a class="dropdown-item active" href="./login.html"> <i class="fa fa-id-badge"></i> Login <span class="sr-only">(current)</span></a>
                         <a class="dropdown-item" href="./signup.html"><i class="fa fa-user-plus"></i>Sign up</a>
                     </div>
                 </li>
-
             </ul>
         </div>
     </nav>
-    <div class="contianer">
-        <h2>Log In</h2>
-        <form>
-           <label for="" class="form-group"></label>
-           <input type="email" class="form-control">
-           <label for=""></label>
-           <input type="password" class="form-control">
-        </form>
-    </div>
+</header>
+<main>
+    <!-- navbar close -->
+     <div style="margin: 200px;"></div>
+    <div class="container">
+        <div id="boxmaker">
+            <h2 style="text-align: center; color:#fff;">Log In</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email" style="color: aliceblue;">E-mail address</label>
+                    <input type="email" class="form-control col-8" id="email" placeholder="Enter your E-mail address">
+                </div>
+                <div class="form-group">
+                    <label for="password" style="color: aliceblue;">Password</label>
+                    <input type="password" class="form-control col-8" id="password" placeholder="Enter the Password with length upto 6 letters">
+                    <small class="text-danger" id="passwordError">Please fill out this field.</small>
+                </div>
+                <button type="submit" class="btn btn-primary ml-5 col-7">Log in</button><br>
+                <hr/ style="color: aliceblue;">
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-danger ml-5 col-7"><i class="fa fa-google"></i>    Continue with Google</button>
+                </div>
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-secondary ml-5 col-7"><i class="fa fa-envelope"></i>   Sign up with Email</button>
+                </div>
+            </form></div>
+            <div style="margin-bottom: 500px;"></div>
+        </div>
+</main>
     <!-- footer bar -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
                     <hr>
                     <h3>Explore Holidify</h3>
                     <ul class="navbar-nav">
@@ -77,9 +97,9 @@
                         <li><a href="" class="nav-link">About Us</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
                     <hr>
-                    <div class="dropup dropdown" style="margin: 50%;">
+                    <div style="margin: 100px;"></div>
                         <label><b>Currency:</b></label>
                         <select id="currency" class="custom-select">
                             <option selected>Currency</option>
@@ -90,7 +110,6 @@
                             <option value="ade"><i class="fa fa-ade"></i>ADE</option>
                             <option value="aud"><i class="fa fa-aud"></i>AUD</option>
                         </select>
-                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3">
                     <hr>
@@ -145,5 +164,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
-
 </html>
