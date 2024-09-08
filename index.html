@@ -12,9 +12,11 @@
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./img/logo.jpg">
+ <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
+  <header>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt="" width="30px"></a>
@@ -40,23 +42,25 @@
                   <a href="./Hotels.html" class="nav-link"> <i class="fa fa-bed"></i> Hotels</a>
               </li>
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                      aria-expanded="false">
-                      Login/Sign up <i class="fa" style="size: 48px;">&#xf090;</i>
-                  </a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="./login.html"> <i class="fa fa-id-badge"></i> Login</a>
-                      <a class="dropdown-item" href="./signup.html"><i class="fa fa-user-plus"></i>Sign up</a>
-                  </div>
-              </li>
-
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    Login/Sign up <i class="fa" style="size: 48px;">&#xf090;</i>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./login.html"> <i class="fa fa-id-badge"></i> Login</a>
+                    <a class="dropdown-item" href="./signup.html"><i class="fa fa-user-plus"></i>Sign up</a>
+                </div>
+            </li>
           </ul>
       </div>
   </nav>
+</header>
+<main>
   <!--India Travel Guide  -->
   <div style="margin-top:50px;"></div>
   <div class="container">
     <!-- The slideshow -->
+     <div id="leftan">
     <div id="demo" class="carousel slide" data-ride="carousel">
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -88,6 +92,7 @@
               </div>
             </div>
           </div>
+          <script src="./login.js"></script>
           <!-- Left and right controls -->
           <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -116,6 +121,7 @@
       </div>
     </div>
   </div>
+  </div>
   <div class="container">
     <div class="row">
       <hr>
@@ -134,7 +140,7 @@
                 <h6>Andaman Island Trip Package - Snorkeling at Elephant Beach</h6>
                 <div style="text-underline-offset:initial;"><i
                     class="fa fa-rupee"></i><strong>32,9999</strong><small>per adult on twin sharing</small><br>
-                  <a href="#" class="text-danger">Get Offers></a>
+                  <a href="#" class="text-danger nav-link">Get Offers></a>
                 </div>
               </div>
             </div>
@@ -148,7 +154,7 @@
                 <h6>Kerala Munnar Tour Package with Thekkady</h6>
                 <div style="text-underline-offset:initial;"><i class="fa fa-rupee"></i><strong>21,000</strong><small>per
                     adult on twin sharing</small><br>
-                  <a href="#" class="text-danger">Get Offers></a>
+                  <a href="#" class="text-danger nav-link">Get Offers></a>
                 </div>
               </div>
             </div>
@@ -162,7 +168,7 @@
                 <h6>Manali Volvo Tour Package</h6>
                 <div style="text-underline-offset:initial;"><i class="fa fa-rupee"></i><strong>15,999</strong><small>per
                     adult on twin sharing</small><br>
-                  <a href="#" class="text-danger">Get Offers></a>
+                  <a href="#" class="text-danger nav-link">Get Offers></a>
                 </div>
               </div>
             </div>
@@ -172,6 +178,7 @@
         <div>
           <hr>
           <hr>
+          <!-- up arrow goto top -->
           <button onclick="topFunction()" id="myButton" title="Go to top"><i class="fa fa-arrow-up"></i></button>
           <!--India Travel Essentials-->
           <h2><strong>India Travel Essentials</strong></h2>
@@ -863,6 +870,7 @@
     </div>
   </div>
   </div>
+</main>
   <!--footet tag -->
   <footer>
     <div class="container">
