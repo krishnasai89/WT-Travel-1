@@ -92,7 +92,6 @@
               </div>
             </div>
           </div>
-          <script src="./login.js"></script>
           <!-- Left and right controls -->
           <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -122,6 +121,7 @@
     </div>
   </div>
   </div>
+  <div style="margin: 1rem;"></div>
   <div class="container">
     <div class="row">
       <hr>
@@ -129,29 +129,30 @@
         <hr>
         <!-- India Travel Packages -->
         <h2>India Travel Packages</h2>
-        <span>Compare quotes from upto 3 travel agents for free</span>
+        <p style="margin-bottom: 1rem;">Compare quotes from upto 3 travel agents for free</p>
         <div class="row box containe">
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6">
-            <div class="card ">
+            <div class="card" id="showdow">
               <div class="card-header">
                 <img class="card-img-top" src="./img/Andaman Island.png" alt="">
               </div>
               <div class="card-body">
-                <h6>Andaman Island Trip Package - Snorkeling at Elephant Beach</h6>
-                <div style="text-underline-offset:initial;"><i
-                    class="fa fa-rupee"></i><strong>32,9999</strong><small>per adult on twin sharing</small><br>
+                <h6><a href="">Andaman Island Trip Package - Snorkeling at Elephant Beach</a></h6>
+                <small><s class="fa fa-rupee">40,999 </s><span style="background-color: green; color: #ffffff;"> 19%off</span></small>
+                <div style="text-underline-offset:initial;"><i class="fa fa-rupee"></i><strong>32,9999</strong><small> per adult on twin sharing</small><br>
                   <a href="#" class="text-danger nav-link">Get Offers></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6">
-            <div class="card">
+            <div class="card" id="showdow">
               <div class="card-header">
                 <img class="card-img-top" src="./img/Kerala Munnar.jpg" alt="">
               </div>
               <div class="card-body">
-                <h6>Kerala Munnar Tour Package with Thekkady</h6>
+                <h6><a href="">Kerala Munnar Tour Package with Thekkady</a></h6>
+                <small><s class="fa fa-rupee">23,000</s><span style="background-color:green; color: #ffffff;"> 8%off</span></small>
                 <div style="text-underline-offset:initial;"><i class="fa fa-rupee"></i><strong>21,000</strong><small>per
                     adult on twin sharing</small><br>
                   <a href="#" class="text-danger nav-link">Get Offers></a>
@@ -160,12 +161,13 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6">
-            <div class="card">
+            <div class="card" id="showdow">
               <div class="card-header">
                 <img src="./img/Manali Volvo Tour Package.jpg" alt="" class="card-img-top">
               </div>
               <div class="card-body">
-                <h6>Manali Volvo Tour Package</h6>
+                <h6><a href="">Manali Volvo Tour Package</a></h6>
+                <small><s class="fa fa-rupee">19,999 </s><span style="background-color: green; color: #ffffff;"> 20%off</span></small>
                 <div style="text-underline-offset:initial;"><i class="fa fa-rupee"></i><strong>15,999</strong><small>per
                     adult on twin sharing</small><br>
                   <a href="#" class="text-danger nav-link">Get Offers></a>
@@ -174,12 +176,12 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-outline-info form-control">View All Packages For India</button>
+        <button class="btn btn-outline-info form-control" style="margin-top: 2rem;">View All Packages For India</button>
         <div>
           <hr>
           <hr>
           <!-- up arrow goto top -->
-          <button onclick="topFunction()" id="myButton" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+          <button onclick="topFunction()" title="Go to top" id="myButton"><i class="fa fa-arrow-up"></i></button>
           <!--India Travel Essentials-->
           <h2><strong>India Travel Essentials</strong></h2>
         </div>
@@ -280,24 +282,19 @@
               <div class="card" id="nearby">
                 <img src="./img/kashmir.png" alt="">
                 <div class="top-right"><a href="" class="btn btn-info">3.9</a></div>
-                <h5>kashmir</h5>
-                </span>
-                <p><a href="" style="color: #000;">Packages from
+                <h5><a href="">kashmir</a></h5>
+                <a href="Packages.html">Packages from
                     <i class="fa fa-rupee"></i>12,000
-                  </a></p>
+                  </a>
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
               <div class="card" id="nearby">
                 <img src="./img/Srinagar.png" alt="">
                 <div class="top-right"><a href="" class="btn btn-info">4.5</a></div>
-                <span>
-                  <h5>Srinagar</h5>
-                </span>
-                <p><a href="" style="color: #000;">Packages from
-                    <i class="fa fa-rupee"></i>12,000
-                  </a></p>
-                </p>
+                  <h5><a href="">Srinagar</a></h5>
+                  <a href="" style="color: darkgray">863 Stay options</a>
+                <a href="Packages.html">Packages from<i class="fa fa-rupee"></i>9,999</a>
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
@@ -305,12 +302,11 @@
                 <img src="./img/Ladakh.png" alt="">
                 <div class="top-right"><a href="" class="btn text-white btn-info">4.6</a>
                 </div>
-                <span>
-                  <h5>Ladakh</h5>
-                </span>
-                <p><a href="" style="color: #000;">Packages from
+                  <h5><a href="">Ladakh</a></h5>
+                  <a href="" style="color: darkgray;">389 Stay options</a>
+                <a href="Packages.html">Packages from
                     <i class="fa fa-rupee"></i>20,000
-                  </a></p>
+                  </a>
                 </p>
               </div>
             </div>
@@ -319,13 +315,11 @@
                 <img src="./img/Gangtok.png" alt="">
                 <div class="top-right"><a href="" class="btn text-white btn-info">4.5</a>
                 </div>
-                <span>
-                  <h5>Gangtok</h5>
-                </span>
-                <p><a href="" style="color: #000;">Packages from
+                  <h5><a href="">Gangtok</a></h5>
+                  <a href="" style="color: darkgray;">684 Stay options</a>
+                <a href="Packages.html">Packages from
                     <i class="fa fa-rupee"></i>13,600
-                  </a></p>
-                </p>
+                  </a>
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
@@ -333,13 +327,11 @@
                 <img src="./img/Andaman and Nicobar Islands.png" alt="">
                 <div class="top-right"><a href="" class="btn text-white btn-info">4.5</a>
                 </div>
-                <span>
-                  <h5>Andaman</h5>
-                </span>
-                <p><a href="" style="color: #000;">Packages from
+                  <h5><a href="">Andaman</a></h5>
+                  <a href="" style="color: darkgray;">458 Stay options</a>
+                <a href="Packages.html">Packages from
                     <i class="fa fa-rupee"></i>13,500
-                  </a></p>
-                </p>
+                  </a>
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
@@ -347,13 +339,11 @@
                 <img src="./img/Manali.png" alt="">
                 <div class="top-right"><a href="" class="btn text-white btn-info">4.5</a>
                 </div>
-                <span>
-                  <h5>Gangtok</h5>
-                </span>
-                <p><a href="" style="color: #000;">Packages from
+                  <h5><a href="">Gangtok</a></h5>
+                  <a href="" style="color: darkgray;">1377 Stay options</a>
+                <a href="Packages.html">Packages from
                     <i class="fa fa-rupee"></i>9,000
-                  </a></p>
-                </p>
+                </a>
               </div>
             </div>
             <button class="btn btn-outline-info form-control">View All Packages For India</button>
@@ -826,43 +816,43 @@
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="card" id="nearby">
               <img src="./img/Nepal.png" alt="">
-              <a href="" class="nav-link text-dark">Nepal</a>
-              <a href="" class="nav-link text-info">Places to visit</a>
+              <a href="" class="text-dark">Nepal</a>
+              <a href="" class="text-info">Places to visit</a>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="card" id="nearby">
               <img src="./img/Bangladesh.png" alt="">
-              <a href="" class="nav-link text-dark">Bangladesh</a>
-              <a href="" class="nav-link text-info">Places to visit</a>
+              <a href="" class="text-dark">Bangladesh</a>
+              <a href="" class="text-info">Places to visit</a>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="card" id="nearby">
               <img src="./img/Bhutan.png" alt="">
-              <a href="" class="nav-link text-dark">Bhutan</a>
-              <a href="" class="nav-link text-info">Places to visit</a>
+              <a href="" class="text-dark">Bhutan</a>
+              <a href="" class="text-info">Places to visit</a>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="card" id="nearby">
               <img src="./img/Sri Lanka.png" alt="">
-              <a href="" class="nav-link text-dark">Sri Lanka</a>
-              <a href="" class="nav-link text-info">Places to visit</a>
+              <a href="" class="text-dark">Sri Lanka</a>
+              <a href="" class="text-info">Places to visit</a>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="card" id="nearby">
               <img src="./img/Thailand.png" alt="">
-              <a href="" class="nav-link text-dark">Thailand</a>
-              <a href="" class="nav-link text-info">Places to visit</a>
+              <a href="" class="text-dark">Thailand</a>
+              <a href="" class="text-info">Places to visit</a>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
             <div class="card" id="nearby">
               <img src="./img/Kyrgyzstan.png" alt="">
-              <a href="" class="nav-link text-dark">Kyrgyzstan</a>
-              <a href="" class="nav-link text-info">Places to visit</a>
+              <a href="" class="text-dark">Kyrgyzstan</a>
+              <a href="" class="text-info">Places to visit</a>
             </div>
           </div>
         </div>
