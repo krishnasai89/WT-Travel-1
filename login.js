@@ -8,16 +8,10 @@ $(".toggle-password").click(function() {
       input.attr("type", "password");
     }
   });
-  const countrySelect = document.getElementById("countrySelect");
-
-const phoneNumberInput = document.getElementById("phoneNumber");
-
-
-
-countrySelect.addEventListener("change", () => {
-
-    const selectedCountryCode = countrySelect.value;
-
-    phoneNumberInput.value = selectedCountryCode + phoneNumberInput.value.replace(selectedCountryCode, ""); 
-
-});
+  
+// check box to accept than only the submit button can access
+const checkbox = document.getElementById('termsAndConditions');
+        const submitButton = document.getElementById('submitButton');
+        checkbox.addEventListener('change', () => {
+            submitButton.disabled = !checkbox.checked;
+        });
