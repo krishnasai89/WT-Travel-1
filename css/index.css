@@ -295,3 +295,17 @@ a:active{
     text-decoration: underline;
     color: #555;
 }
+
+.right{
+    animation: sliderin 3s;
+}
+@keyframes sliderin {
+    from{
+        transition: 150vw 0;
+        scale: 200% 1;
+    }
+    to{
+        transition: 0 0;
+        scale: 100% 1;
+    }
+}
