@@ -14,7 +14,10 @@
   <link rel="icon" href="./img/favicon.png">
 </head>
 
-<body>
+<body onload="loader()">
+  <div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <!-- Navigation Bar -->
   <header>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,8 +49,8 @@
           </ul>
       </div>
   </nav>
-</header>
-<main>
+  </header>
+  <main>
   <!--India Travel Guide  -->
   <div class="container right" style="margin-top: 6rem;">
     <!-- The slideshow -->
@@ -109,7 +112,6 @@
         </div>
       </div>
     </div>
-  </div>
   </div>
   <div style="margin: 1rem;"></div>
   <div class="container">
@@ -292,7 +294,6 @@
             <button class="btn btn-outline-info form-control">View All Packages For India</button>
           </div>
         </div>
-        <div></div>
         <div>
           <hr>
           <hr>
@@ -809,8 +810,7 @@
       </div>
     </div>
   </div>
-  </div>
-</main>
+  </main>
   <!--footet tag -->
   <footer>
     <div class="container">
@@ -882,7 +882,8 @@
             </span>
         </div>
     </div>
-</footer>
+  </footer>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
