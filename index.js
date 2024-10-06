@@ -45,3 +45,6 @@ showPage=()=>{
     document.getElementById("loaders").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
 }
+
+
+//cookies

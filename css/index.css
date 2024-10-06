@@ -22,7 +22,6 @@
     opacity: 0.4;
 }
 
-/* From Uiverse.io by escannord */
 .wrapper {
     display: inline-flex;
     list-style: none;
@@ -312,7 +311,6 @@ a:active{
 
 /* Your rating */
 
-/* From Uiverse.io by PriyanshuGupta28 */ 
 .rating {
     display: inline-block;
 }
@@ -341,7 +339,6 @@ a:active{
 }
 
 /* loader */
-/* From Uiverse.io by Yaya12085 */ 
 .loader {
     display: flex;
     align-items: center;
